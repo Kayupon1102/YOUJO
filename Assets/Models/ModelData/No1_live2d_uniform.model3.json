@@ -1,0 +1,27 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "No1_live2d_uniform.moc3",
+		"Textures": [
+			"No1_live2d_uniform.2048/texture_00.png",
+			"No1_live2d_uniform.2048/texture_01.png"
+		],
+		"Physics": "No1_live2d_uniform.physics3.json",
+		"DisplayInfo": "No1_live2d_uniform.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	]
+}

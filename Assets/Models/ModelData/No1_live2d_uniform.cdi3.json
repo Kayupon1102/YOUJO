@@ -1,0 +1,400 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "",
+			"Name": "角度 X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "",
+			"Name": "角度 Y"
+		},
+		{
+			"Id": "ParamAngleZ",
+			"GroupId": "",
+			"Name": "角度 Z"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "",
+			"Name": "左目　開閉"
+		},
+		{
+			"Id": "ParamEyeLSmile",
+			"GroupId": "",
+			"Name": "左目　笑顔"
+		},
+		{
+			"Id": "ParamEyeExpress",
+			"GroupId": "",
+			"Name": "目　表情"
+		},
+		{
+			"Id": "ParamSpinningEye",
+			"GroupId": "",
+			"Name": "目が回る"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "",
+			"Name": "右目　開閉"
+		},
+		{
+			"Id": "ParamEyeRSmile",
+			"GroupId": "",
+			"Name": "右目　笑顔"
+		},
+		{
+			"Id": "ParamEyeBallX",
+			"GroupId": "",
+			"Name": "目玉 X"
+		},
+		{
+			"Id": "ParamEyeBallY",
+			"GroupId": "",
+			"Name": "目玉 Y"
+		},
+		{
+			"Id": "ParamBrowLY",
+			"GroupId": "",
+			"Name": "左眉　上下"
+		},
+		{
+			"Id": "ParamBrowRY",
+			"GroupId": "",
+			"Name": "右眉　上下"
+		},
+		{
+			"Id": "ParamBrowLAngle",
+			"GroupId": "",
+			"Name": "左眉　角度"
+		},
+		{
+			"Id": "ParamBrowRAngle",
+			"GroupId": "",
+			"Name": "右眉　角度"
+		},
+		{
+			"Id": "ParamBrowLForm",
+			"GroupId": "",
+			"Name": "左眉　変形"
+		},
+		{
+			"Id": "ParamBrowRForm",
+			"GroupId": "",
+			"Name": "右眉　変形"
+		},
+		{
+			"Id": "ParamPaperSetY",
+			"GroupId": "",
+			"Name": "紙の位置Y"
+		},
+		{
+			"Id": "ParamPaperSetX",
+			"GroupId": "",
+			"Name": "紙の位置X"
+		},
+		{
+			"Id": "ParamMouthForm",
+			"GroupId": "",
+			"Name": "口　変形"
+		},
+		{
+			"Id": "ParamMouthOpenY",
+			"GroupId": "",
+			"Name": "口　開閉"
+		},
+		{
+			"Id": "ParamCheekExpress",
+			"GroupId": "",
+			"Name": "頬のふくらみ"
+		},
+		{
+			"Id": "ParamFallSweat",
+			"GroupId": "",
+			"Name": "汗の落下"
+		},
+		{
+			"Id": "ParamCheek",
+			"GroupId": "",
+			"Name": "照れ"
+		},
+		{
+			"Id": "ParamBodyAngleX",
+			"GroupId": "",
+			"Name": "体の回転　X"
+		},
+		{
+			"Id": "ParamBodyAngleY",
+			"GroupId": "",
+			"Name": "体の回転　Y"
+		},
+		{
+			"Id": "ParamSkirtDangle",
+			"GroupId": "ParamGroup5",
+			"Name": "スカートの揺れ"
+		},
+		{
+			"Id": "ParamBodyAngleZ",
+			"GroupId": "",
+			"Name": "体の回転　Z"
+		},
+		{
+			"Id": "ParamRightHand",
+			"GroupId": "ParamGroup2",
+			"Name": "右手の回転"
+		},
+		{
+			"Id": "ParamRightShoulder",
+			"GroupId": "ParamGroup2",
+			"Name": "右肩の回転"
+		},
+		{
+			"Id": "ParamRightArm",
+			"GroupId": "ParamGroup2",
+			"Name": "右腕の回転"
+		},
+		{
+			"Id": "ParamLeftHand",
+			"GroupId": "ParamGroup",
+			"Name": "左手の回転"
+		},
+		{
+			"Id": "ParamLeftShoulder",
+			"GroupId": "ParamGroup",
+			"Name": "左肩の回転"
+		},
+		{
+			"Id": "ParamLeftArm",
+			"GroupId": "ParamGroup",
+			"Name": "左腕の回転"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "呼吸"
+		},
+		{
+			"Id": "ParamAhoHairTop",
+			"GroupId": "ParamGroup3",
+			"Name": "アホ毛の揺れ　上"
+		},
+		{
+			"Id": "ParamRibbonUp",
+			"GroupId": "ParamGroup3",
+			"Name": "リボン揺れ 上"
+		},
+		{
+			"Id": "ParamHairFront",
+			"GroupId": "ParamGroup3",
+			"Name": "髪揺れ　前"
+		},
+		{
+			"Id": "ParamHairRightSide",
+			"GroupId": "ParamGroup3",
+			"Name": "髪揺れ　右横"
+		},
+		{
+			"Id": "ParamHairLeftSide",
+			"GroupId": "ParamGroup3",
+			"Name": "髪揺れ　左横"
+		},
+		{
+			"Id": "ParamRightHairBack",
+			"GroupId": "ParamGroup3",
+			"Name": "髪揺れ　右後"
+		},
+		{
+			"Id": "ParamSenterHairBack",
+			"GroupId": "ParamGroup3",
+			"Name": "髪揺れ　中後"
+		},
+		{
+			"Id": "ParamLeftHairBack",
+			"GroupId": "ParamGroup3",
+			"Name": "髪揺れ　左後"
+		},
+		{
+			"Id": "Param_Angle_Rotation_1_ArtMesh67",
+			"GroupId": "ParamGroup4",
+			"Name": "[0]リボン下"
+		},
+		{
+			"Id": "Param_Angle_Rotation_2_ArtMesh67",
+			"GroupId": "ParamGroup4",
+			"Name": "[1]リボン下"
+		},
+		{
+			"Id": "Param_Angle_Rotation_3_ArtMesh67",
+			"GroupId": "ParamGroup4",
+			"Name": "[2]リボン下"
+		},
+		{
+			"Id": "Param_Angle_Rotation_4_ArtMesh67",
+			"GroupId": "ParamGroup4",
+			"Name": "[3]リボン下"
+		},
+		{
+			"Id": "Param_Angle_Rotation_5_ArtMesh67",
+			"GroupId": "ParamGroup4",
+			"Name": "[4]リボン下"
+		},
+		{
+			"Id": "Param_Angle_Rotation_6_ArtMesh67",
+			"GroupId": "ParamGroup4",
+			"Name": "[5]リボン下"
+		},
+		{
+			"Id": "Param_Angle_Rotation_7_ArtMesh67",
+			"GroupId": "ParamGroup4",
+			"Name": "[6]リボン下"
+		}
+	],
+	"ParameterGroups": [
+		{
+			"Id": "ParamGroup5",
+			"GroupId": "",
+			"Name": "服飾の揺れ"
+		},
+		{
+			"Id": "ParamGroup2",
+			"GroupId": "",
+			"Name": "右腕"
+		},
+		{
+			"Id": "ParamGroup",
+			"GroupId": "",
+			"Name": "左腕"
+		},
+		{
+			"Id": "ParamGroup3",
+			"GroupId": "",
+			"Name": "髪揺れ"
+		},
+		{
+			"Id": "ParamGroup4",
+			"GroupId": "",
+			"Name": "リボン下"
+		}
+	],
+	"Parts": [
+		{
+			"Id": "Part22",
+			"Name": "表情変化"
+		},
+		{
+			"Id": "Part",
+			"Name": "　"
+		},
+		{
+			"Id": "Part18",
+			"Name": "ぐるぐる"
+		},
+		{
+			"Id": "Part21",
+			"Name": "頬のふくらみ"
+		},
+		{
+			"Id": "Part23",
+			"Name": "涙"
+		},
+		{
+			"Id": "Part24",
+			"Name": "汗"
+		},
+		{
+			"Id": "Part25",
+			"Name": "小照"
+		},
+		{
+			"Id": "Part26",
+			"Name": "照"
+		},
+		{
+			"Id": "Part16",
+			"Name": "口"
+		},
+		{
+			"Id": "Part13",
+			"Name": "腕"
+		},
+		{
+			"Id": "Part2",
+			"Name": "紙"
+		},
+		{
+			"Id": "Part3",
+			"Name": "髪の毛"
+		},
+		{
+			"Id": "Part17",
+			"Name": "わき"
+		},
+		{
+			"Id": "Part34",
+			"Name": "服"
+		},
+		{
+			"Id": "Part15",
+			"Name": "肩"
+		},
+		{
+			"Id": "Part10",
+			"Name": "腕装飾"
+		},
+		{
+			"Id": "ArtMesh17_Skinning",
+			"Name": "アホ毛(スキニング)"
+		},
+		{
+			"Id": "Part9",
+			"Name": "アホ毛(回転)"
+		},
+		{
+			"Id": "Part4",
+			"Name": "顔"
+		},
+		{
+			"Id": "Part11",
+			"Name": "左腕の装飾"
+		},
+		{
+			"Id": "Part12",
+			"Name": "右腕の装飾"
+		},
+		{
+			"Id": "Part14",
+			"Name": "髪の毛"
+		},
+		{
+			"Id": "Part5",
+			"Name": "右の眼"
+		},
+		{
+			"Id": "Part7",
+			"Name": "左の眼"
+		},
+		{
+			"Id": "Part20",
+			"Name": "服"
+		},
+		{
+			"Id": "Part6",
+			"Name": "右目"
+		},
+		{
+			"Id": "Part8",
+			"Name": "左目"
+		},
+		{
+			"Id": "ArtMesh67_Skinning",
+			"Name": "リボン下(スキニング)"
+		},
+		{
+			"Id": "Part19",
+			"Name": "リボン下(回転)"
+		}
+	]
+}

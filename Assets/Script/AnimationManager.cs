@@ -1,16 +1,26 @@
 ﻿//using System.Numerics;
 using UnityEngine;
+using Live2D.Cubism.Core;
 
 public class AnimationManager : MonoBehaviour {
     public GameObject model;
     public GameObject eyeCentor;
     public float activeRange, damping, waightDump;
+
     Vector3 faceCentor, targetPosition, lastTargetPosition;
     Animator animator;
     int expressionIndex, spinIndex, motionIndex;
     bool isActive_, lastIsActive_;
     Vector3 velocity = Vector3.zero;
     float[] velocityF = new float[6];
+    float[,] startParms;
+    [SerializeField]bool rightMouseHold = false;
+    [SerializeField] bool rightMouseDrag = false;
+    Vector3 rightMousePos;
+    float rightPressTime = 0;
+    Vector3 ModelPosTmp;
+    CubismParameter[] modelPrameter;
+
 
     void Start() {
         model.transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Camera.main.pixelWidth, 0f));
@@ -28,9 +38,13 @@ public class AnimationManager : MonoBehaviour {
         animator.SetLayerWeight(motionIndex, 1.0f);
 
         for (int i = 0; i < velocityF.Length; i++) velocityF[i] = 0;
+
+        modelPrameter = model.GetComponent<CubismModel>().Parameters;
+        startParms = new float[0,modelPrameter.Length];
     }
 
     void Update() {
+        
         int animationType = animator.GetInteger("AnimationType");
         if (animationType == -1) {
             isActive_ = false;
@@ -40,6 +54,30 @@ public class AnimationManager : MonoBehaviour {
         }
         if (animationType == 0 | animationType == 1) Chase();
 
+        if (rightMouseHold&&rightPressTime<1) rightPressTime += Time.deltaTime;
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            rightMouseHold = true;
+            rightMousePos = Input.mousePosition;
+        }
+        if (Input.GetMouseButtonUp(1))
+        {
+            rightMouseDrag = false;
+            rightMouseHold = false;
+            rightPressTime = 0;
+        }
+        if (rightMouseHold && !rightMouseDrag)
+        {
+            if(rightPressTime>=1 || rightMousePos!= Input.mousePosition)
+            rightMouseDrag = true;
+            ModelPosTmp = model.transform.position;
+        }
+        if (rightMouseDrag)
+        {
+            
+            model.transform.position = ModelPosTmp + Camera.main.ScreenToWorldPoint(Input.mousePosition) - Camera.main.ScreenToWorldPoint(rightMousePos);
+        }
         //LayerWaight
         //AnimationType ==  0   レギュラーモーション、放置状態
         //                  1   マウス追尾
@@ -99,5 +137,9 @@ public class AnimationManager : MonoBehaviour {
                 "AngleSum", Range(
                     animator.GetFloat("AngleSum") + Vector3.Angle(lastTargetPosition, targetPosition) - Time.deltaTime * 100.0f, 0, 2000));
         }
+    }
+
+    void BorderSmoother(AnimationClip next) {
+        
     }
 }
